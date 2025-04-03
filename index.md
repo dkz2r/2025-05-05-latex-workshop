@@ -79,10 +79,10 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endif %}
 
 <strong>Some adblockers block the registration window. If you do not see the registration box below, please check your adblocker settings.</strong>
-<p>Alternatively, you can register for the workshop <strong><a href="">HERE</a></strong></p>
+<p>Alternatively, you can register for the workshop <strong><a href="https://cryptpad.fr/form/#/2/form/view/UDDVL2I+l1rKyFnSZ2o30xF33+Sdfu4HWFexSh6UObY/embed/">HERE</a></strong></p>
 
 <iframe
-  src=""
+  src="https://cryptpad.fr/form/#/2/form/view/UDDVL2I+l1rKyFnSZ2o30xF33+Sdfu4HWFexSh6UObY/embed/"
   frameborder="0"
   width="100%"
   height="800px"
@@ -388,22 +388,7 @@ of code below the Schedule `<h2>` header below with
 
 <h2 id="schedule">Schedule</h2>
 
-{% if site.carpentry == "swc" %}
-{% include swc/schedule.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/schedule.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/schedule.html %}
-{% elsif site.carpentry == "incubator" %}
-This workshop is teaching a lesson in
-<a href="https://carpentries-incubator.org/">The Carpentries Incubator</a>. Please check <a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for a list of lesson sections and estimated timings.
-{% endif %}
-
-{% comment %}
-Edit/replace the text above if you want to include a schedule table.
-See the contents of the _includes/custom-schedule.html file for an example of
-how one of these schedule tables is constructed.
-{% endcomment %}
+{% include custom-schedule.html %}
 
 {% if site.pilot %}
 The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please <a href="mailto:{{page.email}}">contact the workshop organisers</a> if you would like more information about the planned schedule.
