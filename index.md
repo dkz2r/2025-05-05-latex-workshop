@@ -120,7 +120,9 @@ Sign up to receive future editions and read our full archive: <a href="https://c
 {% endif %}
 
 {% if site.pilot %}
+<div class="alert alert-info">
 This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
+</div>
 {% endif %}
 
 {% comment %}
@@ -391,7 +393,9 @@ of code below the Schedule `<h2>` header below with
 {% include custom-schedule.html %}
 
 {% if site.pilot %}
-The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please <a href="mailto:{{page.email}}">contact the workshop organisers</a> if you would like more information about the planned schedule.
+<div class="alert alert-info">
+The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please <a href="mailto:info@dkz2r.de">contact the workshop organisers</a> if you would like more information about the planned schedule.
+</div>
 {% endif %}
 
 <hr/>
