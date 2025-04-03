@@ -78,6 +78,17 @@ displayed if the 'eventbrite' field in the header is not set.
 </script>
 {% endif %}
 
+<strong>Some adblockers block the registration window. If you do not see the registration box below, please check your adblocker settings.</strong>
+<p>Alternatively, you can register for the workshop <strong><a href="">HERE</a></strong></p>
+
+<iframe
+  src=""
+  frameborder="0"
+  width="100%"
+  height="800px"
+  scrolling="auto">
+</iframe>
+
 
 <h2 id="general">General Information</h2>
 
